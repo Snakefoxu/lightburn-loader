@@ -1,6 +1,7 @@
 # LightBurn Loader
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/usuario/lightburn-loader?style=for-the-badge&color=blue)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/Snakefoxu/lightburn-loader?style=for-the-badge&color=blue)
+![Downloads](https://img.shields.io/github/downloads/Snakefoxu/lightburn-loader/total?style=for-the-badge&color=orange)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey?style=for-the-badge&logo=windows)
 ![.NET](https://img.shields.io/badge/.NET-Framework%204.0+-purple?style=for-the-badge&logo=dotnet)
 ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
