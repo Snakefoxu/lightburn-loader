@@ -1,5 +1,5 @@
-LightBurn Custom Loader
-=======================
+LightBurn Custom Loader (for v2.0.05)
+=====================================
 
 Installation Instructions:
 1. Copy "LightBurn_Loader.exe" into your LightBurn installation folder.

@@ -6,7 +6,11 @@
 ![.NET](https://img.shields.io/badge/.NET-Framework%204.0+-purple?style=for-the-badge&logo=dotnet)
 ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
-A lightweight, native loader for LightBurn designed to improve compatibility and portability.
+A lightweight, native loader for **LightBurn 2.0.05**, designed to improve compatibility and portability.
+
+> [!IMPORTANT]
+> This loader is **specifically patched for LightBurn v2.0.05**.
+> It may not work on other versions.
 
 ## Features
 
