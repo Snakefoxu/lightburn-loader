@@ -1,34 +1,52 @@
-# LightBurn Loader
+# LightBurn Patcher v1.1
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/Snakefoxu/lightburn-loader?style=for-the-badge&color=blue)
-![Downloads](https://img.shields.io/github/downloads/Snakefoxu/lightburn-loader/total?style=for-the-badge&color=orange)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey?style=for-the-badge&logo=windows)
-![.NET](https://img.shields.io/badge/.NET-Framework%204.0+-purple?style=for-the-badge&logo=dotnet)
+![Version](https://img.shields.io/badge/LightBurn-2.0.05-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
-A lightweight, native loader for **LightBurn 2.0.05**, designed to improve compatibility and portability.
+Pre-patched LightBurn 2.0.05 with disk patcher included.
 
 > [!IMPORTANT]
-> This loader is **specifically patched for LightBurn v2.0.05**.
-> It may not work on other versions.
-
-## Features
-
-- 🚀 **Native Loading**: Written in pure C#, no external dependencies.
-- 🎨 **Integration**: Includes the original LightBurn icon.
-- 🛡️ **Safe**: Does not modify files on disk; all patching is done in RAM.
-- 🔌 **Portable**: Works from any location (as long as it resides next to the original executable).
+> This release is for **LightBurn v2.0.05** only.
 
 ## Installation
 
-1. Download the latest **Release** from the right panel.
-2. Unzip the file into your LightBurn installation folder (e.g., `C:\Program Files\LightBurn`).
-3. Run `install_shortcut.bat` to create a shortcut on your desktop.
+1. Download and extract the ZIP
+2. Copy **all files** to your LightBurn folder:
+   ```
+   C:\Program Files\LightBurn\
+   ```
+3. Run `LightBurn.exe` - that's it!
 
-## Usage
+## Contents
 
-Simply use the **"LightBurn Patched"** shortcut on your desktop to launch the program.
+| File | Description |
+|------|-------------|
+| `LightBurn.exe` | Pre-patched executable (ready to use) |
+| `LightBurn_Patcher.exe` | Patcher tool (for future updates) |
+| `README.md` | This file |
+
+## Re-patching (After Updates)
+
+If LightBurn updates and overwrites the patched exe:
+
+1. Run `LightBurn_Patcher.exe` as Administrator
+2. It will re-apply patches automatically
+
+## Patcher Options
+
+| Key | Action |
+|-----|--------|
+| Enter | Apply patches |
+| R | Re-apply patches |
+| U | Undo (restore backup) |
+
+## Features
+
+- 🛡️ **No AV Detection** - No memory injection
+- 💾 **Pre-patched** - Just copy and run
+- 🔄 **Self-healing** - Patcher included for updates
 
 ## Disclaimer
 
-This software is provided solely for educational and interoperability purposes. The user is responsible for compliance with applicable software licenses.
+For educational and interoperability purposes only.
