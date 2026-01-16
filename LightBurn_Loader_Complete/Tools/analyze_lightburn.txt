@@ -1,0 +1,25 @@
+// x64dbg Script para análisis de LightBurn
+// ==========================================
+// Cargar con: scriptcmd "D:\REPOS_GITHUB\LightBurn_RE\tools\analyze_lightburn.txt"
+
+// Establecer breakpoints en funciones clave
+bp IsTrialGenuine
+bp IsLicenseGenuine
+bp GetTrialExpiryDate
+bp time
+bp _time64
+bp localtime
+
+// Mensaje
+log "=== Breakpoints establecidos ==="
+log "Breakpoints en: IsTrialGenuine, IsLicenseGenuine, time, _time64, localtime"
+log "==="
+log "Cuando se detenga en un breakpoint:"
+log "1. Mira el stack (Ctrl+K)"
+log "2. El return address te dirá quién llamó"
+log "3. Ve a esa dirección y busca el JZ/JNZ después del CALL"
+log "4. Ese es el salto que necesitas parchear"
+log "==="
+
+// Continuar ejecución
+run
