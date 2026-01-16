@@ -1,37 +1,38 @@
-# LightBurn Patcher
+# LightBurn Patcher (Stealth Edition)
 
-## Métodos Disponibles
+**Target:** LightBurn 2.0.05
+**Version:** v2.1
+**Status:** ✅ Undetected / Working
 
-| Método | Archivo | Detección AV | Uso |
-|--------|---------|-------------|-----|
-| **Patcher** ⭐ | `patcher/` | ✅ Ninguna | Parchar una vez, usar LightBurn directo |
-| Loader | `loader_v2/` | ⚠️ Alta | Requiere exclusión de Defender |
+## Descarga
+Ve a la sección de **[Releases](../../releases)** y descarga **`LightBurn_Patcher_v2.1_Stealth.zip`**.
 
-## Uso Recomendado: Patcher de Disco
+---
 
-1. Copiar `patcher/LightBurn_Patcher.exe` a `C:\Program Files\LightBurn\`
-2. Ejecutar como Administrador
-3. El patcher crea backup y aplica parches
-4. Usar `LightBurn.exe` directamente
+## Instrucciones de Uso
 
-## Estructura
+El paquete incluye dos métodos. Elige el que prefieras:
 
-```
-├── patcher/                    # ⭐ Recomendado
-│   ├── LightBurn_Patcher.exe   # Patcher de disco
-│   ├── Patcher.cs              # Código fuente
-│   └── README.md
-│
-├── loader_v2/                  # Alternativa (detectado por AV)
-│   ├── LightBurn_Loader.exe    # Loader en memoria
-│   ├── Loader.cs
-│   └── add_exclusion.ps1       # Exclusión de Defender
-│
-└── LightBurn_Loader_Complete/  # Herramientas de desarrollo
-    └── Tools/                  # x64dbg, tcc, etc.
-```
+### Opción A: Rápida (Reemplazar)
+1. Extrae el archivo **`LightBurn_Patched.exe`**.
+2. Ve a la carpeta de instalación (ej: `C:\Program Files\LightBurn\`).
+3. Renombra tu `LightBurn.exe` original a `LightBurn.bak`.
+4. Mueve `LightBurn_Patched.exe` a esa carpeta y renómbralo a **`LightBurn.exe`**.
+5. ¡Listo!
 
-## Versión Soportada
+### Opción B: Patcher (Automático)
+Si prefieres modificar tu propio archivo:
+1. Extrae todo el contenido del zip en la carpeta de LightBurn.
+2. Ejecuta **`Run_Patcher.cmd`** (Click derecho -> Ejecutar como Admin).
+3. El script hará un backup y aplicará el parche por ti.
 
-- LightBurn **2.0.05**
-- Para otras versiones, actualizar RVAs en `Patcher.cs` o `Loader.cs`
+---
+
+## Detalles Técnicos
+Este método modifica directamente el byte code del ejecutable en disco (Disk Patching).
+- **Indetectable:** No utiliza inyección de memoria (que alertaría al antivirus).
+- **Seguro:** Utiliza APIs nativas de Windows/PowerShell.
+- **Transparente:** Puedes revisar el código en `patcher.ps1`.
+
+## Disclaimer
+Solo para propósitos educativos. Si te gusta el software, cómpralo para apoyar a los desarrolladores.
