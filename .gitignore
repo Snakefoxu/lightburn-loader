@@ -1,0 +1,31 @@
+# Dev & Source
+*.cs
+*.pdb
+*.obj
+*.user
+*.csproj
+*.sln
+
+# Scripts (Source)
+*.ps1
+*.bat
+*.cmd
+*.vbs
+
+# Directories
+LightBurn_Loader_Complete/
+LightBurn_Loader_Public/
+loader_v2/
+patcher/bin/
+patcher/obj/
+
+# Temporary
+*.backup
+*.bak
+FUCK_THE_SYSTEM.bat
+
+# Allow Releases
+!*.zip
+!*.exe
+!README.md
+!README.txt
