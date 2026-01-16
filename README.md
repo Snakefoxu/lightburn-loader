@@ -4,35 +4,35 @@
 **Version:** v2.1
 **Status:** ✅ Undetected / Working
 
-## Descarga
-Ve a la sección de **[Releases](../../releases)** y descarga **`LightBurn_Patcher_v2.1_Stealth.zip`**.
+## Download
+Go to the **[Releases](../../releases)** section and download **`LightBurn_Patcher_v2.1_Stealth.zip`**.
 
 ---
 
-## Instrucciones de Uso
+## Usage Instructions
 
-El paquete incluye dos métodos. Elige el que prefieras:
+This package includes two methods. Choose the one you prefer:
 
-### Opción A: Rápida (Reemplazar)
-1. Extrae el archivo **`LightBurn_Patched.exe`**.
-2. Ve a la carpeta de instalación (ej: `C:\Program Files\LightBurn\`).
-3. Renombra tu `LightBurn.exe` original a `LightBurn.bak`.
-4. Mueve `LightBurn_Patched.exe` a esa carpeta y renómbralo a **`LightBurn.exe`**.
-5. ¡Listo!
+### Option A: Quick (Replace)
+1. Extract the **`LightBurn_Patched.exe`** file.
+2. Go to your installation folder (e.g., `C:\Program Files\LightBurn\`).
+3. Rename your original `LightBurn.exe` to `LightBurn.bak`.
+4. Move `LightBurn_Patched.exe` to that folder and rename it to **`LightBurn.exe`**.
+5. Done!
 
-### Opción B: Patcher (Automático)
-Si prefieres modificar tu propio archivo:
-1. Extrae todo el contenido del zip en la carpeta de LightBurn.
-2. Ejecuta **`Run_Patcher.cmd`** (Click derecho -> Ejecutar como Admin).
-3. El script hará un backup y aplicará el parche por ti.
+### Option B: Patcher (Automatic)
+If you prefer to patch your own file:
+1. Extract all zip contents into the LightBurn folder.
+2. Run **`Run_Patcher.cmd`** (Right Click -> Run as Administrator).
+3. The script will automatically backup and patch the file for you.
 
 ---
 
-## Detalles Técnicos
-Este método modifica directamente el byte code del ejecutable en disco (Disk Patching).
-- **Indetectable:** No utiliza inyección de memoria (que alertaría al antivirus).
-- **Seguro:** Utiliza APIs nativas de Windows/PowerShell.
-- **Transparente:** Puedes revisar el código en `patcher.ps1`.
+## Technical Details
+This method directly modifies the executable's byte code on disk (Disk Patching).
+- **Stealth:** Does not use memory injection (which triggers antivirus alerts).
+- **Safe:** Uses native Windows/PowerShell APIs.
+- **Transparent:** You can review the source code in `patcher.ps1`.
 
 ## Disclaimer
-Solo para propósitos educativos. Si te gusta el software, cómpralo para apoyar a los desarrolladores.
+For educational purposes only. If you like the software, please buy it to support the developers.
