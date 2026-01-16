@@ -29,3 +29,7 @@ FUCK_THE_SYSTEM.bat
 !*.exe
 !README.md
 !README.txt
+
+# Allow Production Scripts
+!patcher/patcher.ps1
+!patcher/Run_Patcher.cmd
