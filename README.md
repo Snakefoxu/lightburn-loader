@@ -1,38 +1,40 @@
-# LightBurn Patcher (Stealth Edition)
+# 🔥 LightBurn Patcher
 
-**Target:** LightBurn 2.0.05
-**Version:** v2.1
-**Status:** ✅ Undetected / Working
+> **Universal License Unlocker** - Enables all laser controller tiers.
 
-## Download
-Go to the **[Releases](../../releases)** section and download **`LightBurn_Patcher_v2.1_Stealth.zip`**.
+![Version](https://img.shields.io/badge/version-3.0_Pro-brightgreen)
+![Target](https://img.shields.io/badge/target-LightBurn_2.0.05-blue)
+![Platform](https://img.shields.io/badge/platform-Windows-0078D6)
+![Status](https://img.shields.io/badge/status-✅_Undetected-success)
+![License](https://img.shields.io/badge/license-Educational-orange)
+![Downloads](https://img.shields.io/github/downloads/Snakefoxu/lightburn-loader/total?color=purple&label=downloads)
 
----
+## Releases
 
-## Usage Instructions
+| Version | Tiers Enabled | Download |
+|---------|---------------|----------|
+| **v3.0 Pro** | Core + DSP + Galvo | [LightBurn_Patcher_v3.0_Pro.zip](patcher/LightBurn_Patcher_v3.0_Pro.zip) |
+| **v2.2 DSP** | Core + DSP | [LightBurn_Patcher_v2.2_DSP.zip](patcher/LightBurn_Patcher_v2.2_DSP.zip) |
+| v2.1 Stealth | Core only | [LightBurn_Patcher_v2.1_Stealth.zip](patcher/LightBurn_Patcher_v2.1_Stealth.zip) |
 
-This package includes two methods. Choose the one you prefer:
+## Quick Start
 
-### Option A: Quick (Replace)
-1. Extract the **`LightBurn_Patched.exe`** file.
-2. Go to your installation folder (e.g., `C:\Program Files\LightBurn\`).
-3. Rename your original `LightBurn.exe` to `LightBurn.bak`.
-4. Move `LightBurn_Patched.exe` to that folder and rename it to **`LightBurn.exe`**.
-5. Done!
+1. Download the version you need
+2. Extract to `C:\Program Files\LightBurn\`
+3. Run the `.cmd` file as **Administrator**
+4. Open LightBurn - Done!
 
-### Option B: Patcher (Automatic)
-If you prefer to patch your own file:
-1. Extract all zip contents into the LightBurn folder.
-2. Run **`Run_Patcher.cmd`** (Right Click -> Run as Administrator).
-3. The script will automatically backup and patch the file for you.
+## Tier Support
 
----
+| Tier | Controllers |
+|------|-------------|
+| **Core/GCode** | GRBL, Marlin, Smoothie |
+| **DSP** | Ruida, TopWisdom, Trocen |
+| **Galvo** | Fiber/CO2 Galvo lasers |
 
-## Technical Details
-This method directly modifies the executable's byte code on disk (Disk Patching).
-- **Stealth:** Does not use memory injection (which triggers antivirus alerts).
-- **Safe:** Uses native Windows/PowerShell APIs.
-- **Transparent:** You can review the source code in `patcher.ps1`.
+## Undo
+
+Run patcher again → Select **[U]ndo** → Restores from backup
 
 ## Disclaimer
-For educational purposes only. If you like the software, please buy it to support the developers.
+For educational purposes only. Support developers by purchasing.
